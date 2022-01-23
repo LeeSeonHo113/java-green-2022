@@ -18,8 +18,8 @@ public class MySMS {
 
     // 4 params(to, from, type, text) are mandatory. must be filled
     HashMap<String, String> params = new HashMap<String, String>();
-    params.put("to", "01022227460");
-    params.put("from", "01048197443"); // 등록된 번호
+    params.put("to", "010"); // 받는 분 번호
+    params.put("from", "010"); // 등록된 번호
     params.put("type", "SMS");
     params.put("text", "안녕하세요, 이선호입니다.");
     params.put("app_version", "test app 1.2"); // application name and version
