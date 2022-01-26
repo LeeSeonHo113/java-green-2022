@@ -5,36 +5,43 @@ import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-@Data
 @AllArgsConstructor
+@Data
 public class AirportDto {
-    private Response response;
+    private Response response; // 변수명을 꼭 동일하게!!
 
-    @Data
     @AllArgsConstructor
+    @Data
     class Response {
-        private Header header;
-        private Body body;
+        private Header header; // 변수명을 꼭 동일하게!!
 
-        @Data
+        private Body body; // 변수명을 꼭 동일하게!!
+
         @AllArgsConstructor
+        @Data
         class Header {
             private String resultCode;
             private String resultMsg;
+
         }
 
-        @Data
         @AllArgsConstructor
+        @Data
         class Body {
             private Items items;
+            private int numOfRows;
+            private int pageNo;
 
-            @Data
+            private int totalCount;
+
             @AllArgsConstructor
+            @Data
             class Items {
+
                 private List<Item> item;
 
-                @Data
                 @AllArgsConstructor
+                @Data
                 class Item {
                     private String airportId;
                     private String airportNm;
